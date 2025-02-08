@@ -21,6 +21,7 @@ body{
 #experience,
 #education,
 #skills,
+#projects
 #interests,
 #awards{
     display: grid;
@@ -219,6 +220,7 @@ ul{
 }
 @media screen and (min-width: 768px){
     #experience .section,
+    #projects .section,
     #education .section{
         display: grid;
         grid-template-columns: auto auto;
@@ -289,6 +291,7 @@ ul{
     #experience,
     #education,
     #skills,
+    #projects
     #interests,
     #awards{
         padding-top: 10rem;
