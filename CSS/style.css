@@ -242,7 +242,7 @@ ul{
 /* --------------------------------------------- */
 .section .date{
     margin-top: 15px;
-    color: var(--brown);
+    /* color: var(--brown); */
 }
 @media screen and (min-width: 768px){
     #experience .section,
