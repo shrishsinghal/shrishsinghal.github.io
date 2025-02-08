@@ -21,7 +21,7 @@ body{
 #experience,
 #education,
 #skills,
-#projects
+#projects,
 #interests,
 #awards{
     display: grid;
@@ -291,7 +291,7 @@ ul{
     #experience,
     #education,
     #skills,
-    #projects
+    #projects,
     #interests,
     #awards{
         padding-top: 10rem;
