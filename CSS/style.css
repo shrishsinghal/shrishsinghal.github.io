@@ -4,19 +4,45 @@
     margin: 0;
     padding: 0;
 }
-:root{
+/* :root{
     --brown: rgba(189, 93, 56,1);
     --color-email: #bd5d38;
     --color-clarence: #343a40;
     --bg-icons: #495057;
     --color-p: #6c757d;
-}
-body{
+} 
+    body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
     padding-top: 10%;
+} */
+    
+
+
+
+:root {
+    --brown: rgba(44, 62, 80, 1); /* Dark charcoal */
+    --color-email: #6c7a89; /* Medium gray for accents */
+    --color-clarence: #ffffff; /* White for main text */
+    --bg-icons: #34495e; /* Slightly lighter background for icons */
+    --color-p: #95a5a6; /* Light gray for paragraph text */
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    background-color: #34495e; /* Add dark background */
+    color: #ffffff; /* Set default text color to white */
+}
+
+
+
+
+
+
 #about,
 #experience,
 #education,
