@@ -336,19 +336,13 @@ h1 em {
 .dossier dd:last-of-type { border-bottom: 0; }
 .dossier dd strong { font-weight: 500; color: var(--ink); }
 
-.offhours-grid {
-	display: grid;
-	gap: 2rem;
-	align-items: start;
-}
-@media (min-width: 680px) {
-	.offhours-grid { grid-template-columns: minmax(0, 1fr) 14rem; gap: 3rem; }
-}
-
 .portrait {
-	margin: 0 auto;
+	margin: 0 auto 1.8rem;
 	position: relative;
 	max-width: 14rem;
+}
+@media (min-width: 960px) {
+	.portrait { margin-right: 0; }
 }
 .portrait img {
 	width: 100%;
