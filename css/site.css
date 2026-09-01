@@ -335,6 +335,13 @@ h1 em {
 }
 .dossier dd:last-of-type { border-bottom: 0; }
 .dossier dd strong { font-weight: 500; color: var(--ink); }
+.dossier dd a {
+	color: var(--accent);
+	border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+	transition: border-color .18s ease;
+	white-space: nowrap;
+}
+.dossier dd a:hover { border-bottom-color: var(--accent); }
 
 .portrait {
 	margin: 0 auto 1.8rem;
