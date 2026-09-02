@@ -149,11 +149,11 @@
 		<div class="figures">
 			<div class="figure">
 				<b>12%</b>
-				<span>Annualized return, LSTM long/short index strategy — backtested over 10+ years</span>
+				<span>CAGR, LSTM long/short index strategy — 24 years of data, net of 0.5% transaction costs</span>
 			</div>
 			<div class="figure">
-				<b>+15%</b>
-				<span>Model improvement in high-volatility regimes after adding macro factors</span>
+				<b>+2pp</b>
+				<span>CAGR added by the 10-year Treasury regime factor</span>
 			</div>
 			<div class="figure">
 				<b>50K</b>
@@ -180,10 +180,11 @@
 				<p>
 					My quantitative work is systematic strategy research. At NYU I built
 					<strong>long/short strategies on NASDAQ, the S&amp;P 500 and the Dow</strong> using LSTM
-					and SARIMA models over ten years of index data, with macroeconomic series such as the
+					and SARIMA models over 24 years of index data, with macroeconomic series such as the
 					10-year Treasury added as regime context. That included the infrastructure underneath —
 					ingestion, feature engineering, a backtester, and P&amp;L and risk reporting — and
-					position sizing against realized volatility.
+					position sizing against realized volatility. Results are quoted net of 0.5% assumed
+					transaction costs.
 				</p>
 				<p>
 					At Boson Motors I work on high-frequency sensor telemetry: <strong>anomaly detection
@@ -323,12 +324,15 @@
 							<p class="entry-org"><a href="https://engineering.nyu.edu/" target="_blank" rel="noopener">New York University</a> · New York, NY</p>
 							<p>
 								Built systematic long/short strategies on NASDAQ, the S&amp;P 500 and the Dow
-								Jones, using LSTM and SARIMA models over 10+ years of index data to identify
-								regime changes and adjust exposure around them — 12% annualized in backtest.
+								Jones, using LSTM and SARIMA models over 24 years of index data to identify
+								regime changes and adjust exposure around them — 12% CAGR in backtest, net of
+								0.5% assumed transaction costs, evaluated across 18 consecutive quarters
+								(Jan 2020 — Jun 2024).
 								Wrote the whole research stack in Python: ingestion, feature engineering,
 								backtester, performance and risk reporting. Integrating macroeconomic series
-								including the 10-year Treasury through SQL and pandas ETL lifted model
-								performance roughly 15% during high-volatility periods.
+								including a 100-day forecast of the 10-year Treasury rate through SQL and pandas ETL
+								added roughly 2 percentage points of CAGR. A threshold-based inversion overlay
+								handled periods where the model's directional signal reversed.
 							</p>
 							<ul class="tags">
 								<li>LSTM</li><li>SARIMA</li><li>Alpha signals</li><li>Macro factors</li><li>SQL</li><li>Backtesting</li>
@@ -344,7 +348,10 @@
 							<p>
 								Proposed an attention-based model for detecting abdominal lymph node metastasis
 								in colorectal cancer, reaching 90% accuracy, and implemented region-growing
-								segmentation for bone tissue in CT scans at a Dice coefficient of 0.93. Supervised
+								segmentation for bone tissue in CT scans — Dice 0.9321, Jaccard 0.8729 and
+								recall 0.9662 across 27 CT volumes from 20 patients, the best Jaccard and recall
+								of the five methods benchmarked, at 66s per image with no training required.
+								Supervised
 								by Prof. M. K. Bhuyan and Prof. Yuji Iwahori (Chubu University, Japan); the
 								segmentation work was published by Springer.
 							</p>
@@ -511,6 +518,7 @@
 							</p>
 							<p class="venue">Proc. International Conference on Computer Vision and Machine Intelligence (CVMI 2022) · Lecture Notes in Networks &amp; Systems, vol. 586, pp. 233–242</p>
 							<p class="authors">S. K. Singhal, B. Goswami, Y. Iwahori, M. K. Bhuyan, A. Ouchi, Y. Shimizu</p>
+							<p class="venue">Benchmarked against four published methods on 27 CT volumes: Dice 0.9321, Jaccard 0.8729, precision 0.9004, recall 0.9662 — best Jaccard and recall of the set, second on Dice to a CNN requiring full training.</p>
 						</div>
 					</li>
 					<li>
@@ -520,7 +528,8 @@
 								<a class="rule-link" href="https://ieeexplore.ieee.org/document/9725391" target="_blank" rel="noopener">Security Analysis of the Aadhaar Authentication Process and Way Forward</a>
 							</p>
 							<p class="venue">3rd International Conference on Advances in Computing, Communication Control and Networking (ICAC3N), Greater Noida, India</p>
-							<p class="authors">Written during the UIDAI internship, under Dr. Vivek Raghavan</p>
+							<p class="authors">Sole author · written during the UIDAI internship, under Dr. Vivek Raghavan</p>
+							<p class="venue">Security assessment of an authentication system serving 1.3 billion enrolled residents and 40M+ transactions per day, with recommendations on liveness checking and multi-factor authentication.</p>
 						</div>
 					</li>
 					<li>
@@ -529,7 +538,7 @@
 							<p class="title">
 								<a class="rule-link" href="https://drive.google.com/file/d/1R_IFBDHLqCOWVhHyXYXZ710Tej9FsnPF/view" target="_blank" rel="noopener">An LSTM Case Study for Trading American Liquid Indices</a>
 							</p>
-							<p class="venue">Systematic long/short strategies on US indices, with macroeconomic regime context · unpublished draft</p>
+							<p class="venue">Statistical arbitrage on NASDAQ, S&amp;P 500 and DJI over 24 years of daily data · 12% CAGR net of 0.5% transaction costs, +2pp from a 10-year Treasury regime factor · co-authored with Prof. Carlos De Oliveira · unpublished draft</p>
 						</div>
 					</li>
 				</ul>
