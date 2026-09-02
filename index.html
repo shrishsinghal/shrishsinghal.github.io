@@ -401,14 +401,30 @@
 
 					<a class="item" href="https://github.com/shrishsinghal/Alpha-Testing" target="_blank" rel="noopener">
 						<div class="item-head">
-							<h4>Alpha-driven, volatility-targeted equity strategy</h4>
+							<h4>A cross-sectional equity backtesting engine</h4>
 							<span class="meta">GitHub ↗</span>
 						</div>
 						<p>
-							A complete research stack in one repository: data ingestion, feature engineering,
-							signal construction, backtesting, and P&amp;L and risk reporting. Long/short equity
-							sized against realized volatility rather than raw signal strength — 15% annualized
-							in backtest.
+							An event-driven simulator built around a single abstract Alpha class, so a
+							signal is defined once and the engine handles everything else: threaded ingestion
+							of S&amp;P 500 daily bars, an eligibility filter for stale and unlisted names,
+							portfolio-level volatility targeting at 20% annualized, and daily accounting of
+							positions, weights, leverage, P&amp;L and returns.
+						</p>
+						<p>
+							Three signals are implemented against it and compared on the same 2010–2026 window,
+							20 names, $10k of starting capital, no transaction costs: a cross-sectionally
+							z-scored volume/price-pressure reversal traded as a long/short quartile portfolio
+							(1.5% CAGR, Sharpe 0.22), an intraday open-to-close reversal (5.2% CAGR, Sharpe
+							0.40), and a three-horizon moving-average trend signal that is long-only by
+							construction (14.6% CAGR, Sharpe 0.89, 33% max drawdown).
+						</p>
+						<p class="note">
+							Known limitations: the universe is current S&amp;P 500 membership, so it carries
+							survivorship bias; costs and slippage are not modelled; and per-instrument
+							volatility is computed but not yet used in position sizing, so only the portfolio
+							target is live. Documented rather than papered over — the fixes are the next
+							version.
 						</p>
 					</a>
 
