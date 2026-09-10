@@ -194,6 +194,11 @@
 					monitoring built to catch it.
 				</p>
 				<p>
+					More recently I have been working on fixed income: bootstrapping zero curves from
+					the Treasury constant-maturity series and decomposing carry and roll-down on
+					repo-financed cash Treasuries, described under Selected work.
+				</p>
+				<p>
 					I passed <strong>FRM Part I in August 2026</strong>, top quartile across all four
 					exam domains, and am looking for quantitative research, systematic trading, or risk
 					roles.
@@ -398,6 +403,28 @@
 			<div>
 				<div class="work-group">
 					<h3>Quantitative</h3>
+
+					<a class="item" href="https://github.com/shrishsinghal/rates-carry-roll" target="_blank" rel="noopener">
+						<div class="item-head">
+							<h4>US Treasury carry and roll-down</h4>
+							<span class="meta">GitHub ↗</span>
+						</div>
+						<p>
+							Pulls the constant-maturity Treasury curve and SOFR from FRED, strips a zero
+							curve out of the par yields with a shape-preserving spline, and decomposes
+							carry and roll-down on repo-financed cash Treasuries across the curve. The
+							split is exact rather than approximate, and the act/360 repo against act/act
+							bond basis is handled explicitly instead of waved away.
+						</p>
+						<p>
+							Extends to DV01-neutral spread and fly carry, quoted the way a desk would. The
+							shape-preserving fit matters: it keeps the curve from inventing humps between
+							knots, which is what surfaces the long end rolling <em>up</em> wherever 30y par
+							sits through 20y. Sixteen self-checks, including steepener and fly signs pinned
+							to explicitly constructed DV01-neutral P&amp;Ls after an earlier version had the
+							convention backwards. The current numbers regenerate into the repo on every run.
+						</p>
+					</a>
 
 					<a class="item" href="https://github.com/shrishsinghal/Alpha-Testing" target="_blank" rel="noopener">
 						<div class="item-head">
