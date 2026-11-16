@@ -1,10 +1,20 @@
+# Job hunt working files, not part of the published site
 /someinfo
 /JD
-/linkedin_Profile.pdf
-/papers
-/Shrish_Letter.pdf
-/Alpha-Testing
-/resume
 /jobhunt
+/resume
+/papers
+
+# Local clones of project repos that live on their own GitHub remotes
 /Alpha-Testing
 /rates-carry-roll
+
+# Personal documents that should not be publicly fetchable
+/linkedin_Profile_1.pdf
+/linkedin_Profile_2.pdf
+/Shrish_Letter.pdf
+
+# OS and editor noise
+.DS_Store
+**/.DS_Store
+.claude/settings.local.json
